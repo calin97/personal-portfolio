@@ -1,0 +1,91 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-color: #B1CACE;
+    display: flex;
+}
+
+body * {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+/* main container area */
+.main-container {
+    /* width: 90vw;
+    height: 90vh; */
+
+    width: 1200px;
+    height: 85vh;
+    margin: auto;
+
+    display: flex;
+    gap: 3px;
+}
+/* main container area */
+
+
+/* sidebar area */
+.main-container > .sidebar-wrapper {
+    padding: 25px 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-wrapper > .sidebar-item {
+    cursor: pointer;
+}
+/* sidebar area */
+
+/* content area */
+.main-container > .content-wrapper {
+    background-color: white;
+    padding: 60px;
+    position: relative;
+    overflow-y: scroll;
+}
+/* content area */
+
+/* about me */
+
+.info-container {
+    display: flex;
+}
+
+.info-container > .details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40% ;
+    margin-top: 30px;
+}
+
+.details > button {
+    margin: auto auto auto 0;
+    background-color: #56B887;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px -8px rgb(80 90 96 / 33%);
+}
+
+.profile-image > img {
+    border-radius: 50% 0 50% 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* about me */
+
+
+
