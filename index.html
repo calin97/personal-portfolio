@@ -5,8 +5,18 @@
     <link rel="stylesheet" href="./CSS/scrollbar.css" />
     <link rel="stylesheet" href="./CSS/main.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/a26eb66b29.js" crossorigin="anonymous"></script>
+
+
+
     <script src="./js/index.js"></script>
+    <script src="./js/animation.js"></script>
   </head>
 
   <body>
@@ -38,7 +48,7 @@
 
       </div>
 
-      <div class="content-wrapper">
+      <div id="main-container" class="content-wrapper">
 
         <!-- PROFILE!!!!!!!!!!!!!!!! -->
 
@@ -47,11 +57,12 @@
           <div class="info-container">
             <div class="details">
               <div>
-                <span>Frontend Developer</span>
+                <span>Biotechnological Engineer & self taught programmer</span>
                 <h1>Calin Ciobanu-Szedlak</h1>
               </div>
 
-              <p>Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
+              <p>I am a positive, energetic person eagerly waiting to be part of a team and learn new things. I am a
+                responsible person who likes working with other people and who always gives 120%.</p>
 
               <a href="./images/CV_Calin Ciobanu-Szeldak.pdf" download>Download CV</a>
             </div>
@@ -104,7 +115,7 @@
   
                   <div class="details">
                     <h3>Mathematics and informatics class</h3>
-                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                    <p>Graduating from a mathematics and informatics high school provided me with a solid foundation in both theoretical and practical aspects of computer science. With a strong emphasis on math and logic, I gainned skills necessary to analyze problems and develop efficient solutions.</p>
                   </div>
                 </div>
   
@@ -116,41 +127,52 @@
   
                   <div class="details">
                     <h3>Bachelor of Biotechnological Engineering</h3>
-                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                    <p>Being a biotechnological engineer can provide valuable skills for a career in web development, such as technical expertise, analytical thinking, and an interdisciplinary perspective. Biotechnological engineers may have a unique perspective and set of skills that can contribute to the development of innovative and effective websites.  </p>
                   </div>
                 </div>
               </div>
   
               <div class="coding-container">
                 <div class="percentage-cointainer">
-                  <h2 class="section-title">Coding Skills</h2>
+                  <h2 class="section-title">Hard Skills</h2>
                   <div class="coding-skills">
     
                     <div class="language-container">
                       <div class="details">
+                        
                         <span class="coding-language">Javascript</span>
-                        <span class="percent">80%</span>
+                        <span class="coding-language">JQuery</span>
+                        <!-- <span class="percent">80%</span> -->
+                      </div>
+                      <div class="details">
+
+                        <span class="coding-language">OOP</span>
+                        <span class="coding-language">Asynchronous JavaScript</span>
+                        <span class="coding-language">MVC</span>
                       </div>
     
-                      <div class="progress-bar"></div>
+                      <!-- <div class="progress-bar"></div> -->
                     </div>
     
                     <div class="language-container">
                       <div class="details">
                         <span class="coding-language">HTML</span>
-                        <span class="percent">80%</span>
+                        <!-- <span class="percent">80%</span> -->
                       </div>
     
-                      <div class="progress-bar"></div>
+                      <!-- <div class="progress-bar"></div> -->
                     </div>
     
                     <div class="language-container">
                       <div class="details">
                         <span class="coding-language">CSS</span>
-                        <span class="percent">80%</span>
+                        <span class="coding-language">SCSS</span>
+                        <!-- <span class="percent">80%</span> -->
                       </div>
+                    
+                    
     
-                      <div class="progress-bar"></div>
+                      <!-- <div class="progress-bar"></div> -->
                     </div>
     
     
@@ -158,14 +180,17 @@
                 </div>
   
                 <div class="knowledge-container">
-                  <h2 class="section-title">Knowledges</h2>
+                  <h2 class="section-title">Soft Skills</h2>
   
                   <div class="knowledge-container">
                     <span class="knowledge">Time Management</span>
                     <span class="knowledge">Communication</span>
-                    <span class="knowledge">Flexibility</span>
+                    <span class="knowledge">Collaboration</span>
                     <span class="knowledge">Problem-Solving</span>
                     <span class="knowledge">Fast Learner</span>
+                    <span class="knowledge">Creativity</span>
+                    <span class="knowledge">Adaptability</span>
+                    <span class="knowledge">Attention to Detail</span>
                   </div>
                 </div>
   
@@ -177,7 +202,7 @@
 
               <div class="certification-details">
                 <span class="topic">Title</span>
-                <h3 class="detail">Psyhology of Intertnation Design</h3>
+                <h3 class="detail">THE COMPLETE JAVASCRIPT COURSE</h3>
 
                 <span class="topic">Date</span>
                 <p class="detail">Jan.20, 2023</p>
@@ -186,10 +211,10 @@
                 <p class="detail">69 hours</p>
 
                 <span class="topic">Certificate no.</span>
-                <p class="detail">4257328743</p>
+                <p class="detail">UC-05a0d113-5e8f-471e-82c6-efa00973d2fd</p>
 
                 <span class="topic">Details</span>
-                <p class="detail">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+                <p class="detail">Throughout this course, I have gained a strong understanding of essential JavaScript concepts, including Modern Object-Oriented Programming, Asynchronous JavaScript, NPM, Parcel, Babel, and ES6 Modules. I have also learned Modern ES6+ from the beginning, as well as more complex concepts such as the 'this' keyword, higher-order functions, and closures. Furthermore, I have acquired valuable skills for architecting code, including how to use flowcharts and common patterns.</p>
 
                 <span></span>
                 
@@ -210,57 +235,62 @@
             <div class="project-wrapper">
 
               <div class="project row-1">
-                <img src="./images/pig_game.jpeg" alt="">
+                <img src="./images/recipe_app.jpeg" alt="">
   
                 <div class="project-details">
-                  <h2>Pig Game</h2>
-                  <p class="project-paragraph">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
+                  <h2>Recipe Application</h2>
+                  <p class="project-paragraph">This recipe application allows users to search for food categories, such as pasta, and retrieve a list of recipes with ingredients and serving sizes. Additionally, users can bookmark their favorite recipes and even create and save their own personalized recipes. For this project, I utilized an API for retrieving recipes and implemented the Model-View-Controller (MVC) architecture to organize and manage the code. To store bookmarked data, I incorporated local storage. Furthermore, I optimized the final output for performance and efficiency by utilizing Parcel and NPM.
+                    I faced difficulties while attempting to refactor the code to adhere to the MVC (Model-View-Controller) architecture, as well as when devising an algorithm to update the Document Object Model (DOM). </p>
   
-                  <a class="see-project-btn" href="https://fascinating-praline-f2a414.netlify.app/" target="_blank">See Project</a>
+                  <a id="btn-see-animation" class="see-project-btn" href="https://soft-baklava-81d2af.netlify.app/ " target="_blank">See Project</a>
                 </div>
               </div>
   
-              <div class="project row-2">
-                <div class="project-details">
-                  <h2>Map App</h2>
-                  <p class="project-paragraph">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
-  
-                  <a class="see-project-btn" href="https://idyllic-souffle-87e304.netlify.app/" target="_blank">See Project</a>
-                </div>
-  
-                <img src="./images/map_app.jpeg" alt="">
-              </div>
-
-              <div class="project row-1">
-                <img src="./images/bank_app_presentation.jpeg" alt="">
-  
-                <div class="project-details">
-                  <h2>Bank App (Presentation Site)</h2>
-                  <p class="project-paragraph">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
-  
-                  <a class="see-project-btn"  href="https://merry-zabaione-34a9ac.netlify.app/" target="_blank">See Project</a>
-                </div>
-              </div>
-
               <div class="project row-2">
                 <div class="project-details">
                   <h2>Bank App</h2>
-                  <p class="project-paragraph">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
+                  <p class="project-paragraph">The project overview describes a banking application that comes with pre-registered accounts. The usernames assigned to the accounts are "js" and "jd" while the passwords for "js" and "jd" are "1111" and "2222" respectively. The application offers various features such as the ability to transfer money, request a loan, and close an account. Additionally, it provides a transaction history log, and a log timer has been implemented for security purposes.
+                    During the process of completing this project, I gained knowledge about various programming methods and concepts. Specifically, I learned about using filter and reduce methods to manipulate data, as well as how to utilize flat and flatMap methods appropriately. Additionally, I gained insights into sorting arrays and using timers to enhance the application's performance. Finally, I also became familiar with internationalizing dates, which will allow for greater flexibility in handling date formats across different regions.
+                    </p>
   
-                  <a class="see-project-btn" href="https://rad-macaron-4c3ca9.netlify.app/" target="_blank">See Project</a>
+                  <a id="btn-see-animation" class="see-project-btn" href="https://rad-macaron-4c3ca9.netlify.app/" target="_blank">See Project</a>
                 </div>
   
                 <img src="./images/bank_app.jpeg" alt="">
               </div>
 
               <div class="project row-1">
-                <img src="./images/recipe_app.jpeg" alt="">
+                <img class="gs_reveal_fromLeft gs_reveal" src="./images/bank_app_presentation.jpeg" alt="">
   
                 <div class="project-details">
-                  <h2>Restaurant App</h2>
-                  <p class="project-paragraph">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien.</p>
+                  <h2>Bank App (Presentation Site)</h2>
+                  <p class="project-paragraph gs_reveal_fromRight gs_reveal">This project taught me a great deal about the Document Object Model (DOM) and its functionalities. I learned how to select, create, and delete elements, as well as implement smooth scrolling and understand event propagation mechanisms such as bubbling and capturing. Furthermore, I became familiar with DOM traversing and how to implement a sticky navigation, as well as revealing elements on scroll. Finally, I also gained insights into the lifecycle DOM events, which provided a better understanding of how the DOM interacts with the web page.</p>
   
-                  <a class="see-project-btn" href="https://soft-baklava-81d2af.netlify.app/">See Project</a>
+                  <a id="btn-see-animation" class="see-project-btn"  href="https://merry-zabaione-34a9ac.netlify.app/" target="_blank">See Project</a>
+                </div>
+              </div>
+
+              <div class="project row-2">
+                <div class="project-details">
+                  <h2>Map App</h2>
+                  <p class="project-paragraph">The project overview outlines a workout application designed for simulating running and cycling exercises. Users can choose any point on the map as their starting point, and input a description detailing the intended duration and distance of their workout. Throughout the development of this project, I gained knowledge in various areas including Object-Oriented Programming (OOP), geolocation, utilizing external libraries such as the leaflet library, and working with local storage to ensure data persistence.</p>
+  
+                  <a id="btn-see-animation" class="see-project-btn" href=" https://idyllic-souffle-87e304.netlify.app/" target="_blank">See Project</a>
+                </div>
+  
+                <img src="./images/map_app.jpeg" alt="">
+              </div>
+
+              <div class="project row-1">
+                <img src="./images/pig_game.jpeg" alt="">
+  
+                <div class="project-details">
+                  <h2>Dice-Game</h2>
+                  <p class="project-paragraph">This was my initial project, a mini-game based on pure luck that involves two players rolling dice in an attempt to reach 21 points. The game mechanics allow players to accumulate points by holding their score, and the first player to reach 21 points is declared the winner. An interesting aspect of the game is that if a player rolls a 1 on the dice, they lose their turn entirely.
+                    This project served as an opportunity for me to become more familiar with programming concepts and developing skills in DOM manipulations. Additionally, I also gained insights into CSS manipulation techniques, which helped me to better understand how to create visually appealing and responsive web pages.
+                    </p>
+  
+                  <a id="btn-see-animation" class="see-project-btn" href="https://cheery-custard-e64c47.netlify.app/" target="_blank">See Project</a>
                 </div>
               </div>
 

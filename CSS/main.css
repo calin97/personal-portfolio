@@ -263,12 +263,17 @@ body * {
 
 .language-container > .details {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     padding: 15px 0;
+    gap: 10px
 }
 
 .language-container > .details > .coding-language {
-    font-weight: 600;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: #56B887;
+    color: white;
+    border-radius: 15px;
 }
 
 .language-container > .details > .percent {
@@ -342,10 +347,13 @@ body * {
     margin-top: 30px;
 }
 
+
 .project > img {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    align-self: center;
     box-shadow: 0 10px 10px -8px rgb(80 90 96 / 33%);
+    border-radius: 6px;
 }
 
 .project-details {
@@ -359,6 +367,12 @@ body * {
     flex-direction: column;
     gap: 70px;
 }
+
+/* .gs_reveal{
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+} */
 
 .project-details > .see-project-btn {
     padding: 7px 20px;

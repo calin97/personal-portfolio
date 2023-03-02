@@ -23,10 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function setColorBtn(btn, color) {
-    
-   
     if (btn.active) return 
-        
         btn.children[0].style.fill = color;
     
 }
@@ -124,3 +121,4 @@ function initHtmlElements() {
 
     setColorBtn(btnProfile.element, activeColor)
 }
+
