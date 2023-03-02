@@ -24,6 +24,17 @@ $(document).ready(function(){
     $('.see-project-btn').on('mouseleave', function() {
         gsap.to($(this), {scale: 1, duration: .3});
     })
+
+    $('.download-btn').on('mouseenter', function() {
+        gsap.to($(this), {scale: 1.2, duration: .3});
+        
+    })
+
+    $('.download-btn').on('mouseleave', function() {
+        gsap.to($(this), {scale: 1, duration: .3});
+    })
+
+
     
     
     
